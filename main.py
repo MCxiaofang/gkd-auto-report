@@ -115,5 +115,8 @@ def send_message(title: str, content: str):
 
 
 if __name__ == "__main__":
-    login(s)
-    submit(s)
+    try:
+        login(s)
+        submit(s)
+    except Exception as e:
+        send_message('执行错误', str(e))
