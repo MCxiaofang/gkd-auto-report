@@ -31,7 +31,7 @@ def submit(s: requests.Session):
 
         # submitted date
         "date": time.strftime(r"%Y-%m-%d", time.localtime()),
-        "jzdz": "山西省大同市平城区新华街小区2004",     # Residential Address
+        "jzdz": "北京市怀柔区中国科学院大学雁栖湖校区西区五公寓",     # Residential Address
         "zrzsdd": "1",                       # Yesterday place to stay    1.雁栖湖  8.京外
         # Whether you are in school or not  1.是, 主要是在雁栖湖校区   5.否
         "sfzx": "1",
