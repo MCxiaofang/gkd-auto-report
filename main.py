@@ -93,8 +93,6 @@ def submit(s: requests.Session):
     print("提交信息:", new_daily)
 
     result = r.json()
-    print(result.get('m'))
-    exit(0)
     if result.get('m') == "操作成功":
         send_message('打卡成功', '打卡成功！')
     elif result.get('m') == "今天已经填报了":
